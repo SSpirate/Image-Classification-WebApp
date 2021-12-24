@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block body %}
+ 
+
+
+<div class="container" id=myrow>
+    <div class="row">
+        <pre>
+           
+        </pre>
+    </div>
+</div>
+<style>
+    #myrow{
+        background-color:#EBEDEF;
+    }
+
+    body{
+    background-image: url({{ url_for ('static', filename = 'blue.jpg') }});
+    background-size: 2200px 1250px;
+    background-position: -385px 0px;
+    
+    }
+
+</style>
+{% endblock  %}

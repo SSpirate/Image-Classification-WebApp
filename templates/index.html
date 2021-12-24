@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Image Classification!!</title>
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <script src="/static/js/bootstrap.js"></script>
+        <script src="/static/js/bootstrap.bundle.js"></script>
+        <script src="/static/js/jquery-3.5.1.js"></script>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2C3E50;">
+            <a class="navbar-brand" href="/">Sanjai's Image Classification App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container">
+            <br>
+            <br>
+            
+            <h4><center>IMAGE CLASSIFICATION WEB-APP</center></h4>
+            <br>
+            
+
+        </div>
+
+        {% block body %}
+        
+        
+        
+        {% endblock  %}
+
+
+        <!-- Footer -->
+        <div class="container">
+            <hr>
+            <footer>
+                Developed by <a href="https://sanjaisiddharth200.wixsite.com/my-site">Sanjai Siddharthan M</a>
+            </footer>
+        </div>
+        <style>
+            body{
+                background-image: url({{ url_for ('static', filename = 'blue.jpg') }});
+                background-size: 2200px 1250px;
+                background-position: -385px 0px;
+                color : white;
+    
+                }
+
+        </style>
+    </body>
+</html>
